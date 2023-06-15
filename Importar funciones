@@ -1,0 +1,8 @@
+import Funciones as fn 
+fn.saludo()
+fn.listar()
+
+num = int(input("Ingrese un valor:"))
+fn.eliminar(num)
+
+

@@ -1,0 +1,61 @@
+#definir funcion
+def saludo():
+    print("saludos")
+
+saludo()
+
+#funcion sin argumentos y con retorno
+def suma():
+    num1=3
+    num2=5
+    return(num1+num2)
+print("la suma es :", suma())
+#funcion con argumentos y sin retorno
+def suma(a,b):
+    suma =a+b
+    print(f"la suma de los elementos es:{suma}")
+num1 = int(input("Ingrese el primer numero:"))
+num2 = int(input("ingrese el segundo numero:"))
+suma(num1,num2)
+#con argumentos y con retorno
+def suma(a,b):
+    suma = a+b
+    return (suma)
+num1=int(input("Ingrese el primer numero:"))
+num2= int(input("Ingrse el segundo numero:"))
+print(f"El resultado de la suma es:", suma(num1,num2))
+##############################################
+lista=[10,50,500,1000,5000]
+#sin arg sin retorno
+#Muestre todos los valores de la lista
+def listar():
+    for i in range(len(lista)):
+        print(lista[i])
+listar()
+#sin argumento con retorno
+def sizelista():
+    return len(lista)
+#print (f"El largo de la lista es:{sizelista()}")
+
+def buscar(valor):
+    for x in lista:
+        if x==valor:
+            res="Valor existente"
+    print(res)
+
+#num=int(input("ingrese valor a buscar"))
+#buscar(num)
+
+#Eliminar un registro de la lista
+def eliminar(valor):
+    try:
+        lista.remove(valor)
+        print("Eliminado con exito")
+    except ValueError:
+        print("Valor no se encuentra")
+num=int(input("Ingrese un valor para eliminarlo:"))
+eliminar(num)
+
+
+
+
