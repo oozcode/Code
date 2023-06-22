@@ -1,0 +1,50 @@
+import numpy as np 
+total=0
+def sumarboleta (precio,cantidad):
+    suma=precio*cantidad
+    print(f"se ha sumado {suma} a su boleta")
+    return suma
+def pagar (total):
+    if total >= 3000:
+        total-= (total*0,1)
+        print(f"El total de su compra es ${total}")
+    else:
+        print(f"El total de su compra es ${total}")
+
+
+
+opcion=0
+#Espresoo-capuccino-latte-mokka-pagar
+while opcion !=5 :
+    print("menu de compra")
+    print("1.- espresso $1500")
+    print("2.-Capuchino $1800")
+    print("3.- Latte $1600")
+    print("4.- moca $1700")
+    print("5.-pagar ")
+    print("6.-Anular")
+        
+    opcion=int(input("ingrese una opcion"))
+    try:
+        if opcion ==1:
+            cantidad =int(input("cuantos desea?:"))
+            total += sumarboleta(1500,cantidad)
+        elif opcion==2:
+            cantidad =int(input("cuantos desea?:"))
+            total+= sumbarboleta(1800,cantidad)
+        elif opcion==3:
+            cantidad =int(input("cuantos desea?:"))
+            total+= sumbarboleta(1600,cantidad)
+        elif opcion==4:
+            cantidad=int(input("ingrese cantidad"))
+            total+=sumarboleta(1700,cantidad)
+        elif opcion==5:
+            pagar(total)
+        elif opcion ==6:
+            total=0
+            print("compra anulada correctamente")
+        else:
+            print("opcion fuera de rango")
+    except:
+        print()
+  
